@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Cecinas Artesanales</title>
+    <link rel="stylesheet" href="catalogo-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header del Catálogo con Navegación -->
+<header class="catalogo-header">
+    <nav class="catalogo-nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        Inicio
+                    </a>
+                    <a href="#condiciones" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        Condiciones
+                    </a>
+                    <a href="#contacto" class="nav-link">
+                        <i class="fas fa-phone"></i>
+                        Contacto
+                    </a>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+        <div class="header-banner">
+            <h1>Catálogo de Productos 2024</h1>
+            <p>Elaboración Artesanal • Ingredientes Premium • Tradición Familiar</p>
+            <p class="presentacion-info">Todos nuestros productos en presentación de 1kg</p>
+        </div>
+    </div>
+</header>
+
+    <main class="catalogo-main">
+        <!-- Selector de Tipo de Cliente -->
+        <section class="cliente-selector">
+            <div class="container">
+                <h3>Seleccione su tipo de cliente para ver precios:</h3>
+                <div class="selector-buttons">
+                    <button class="selector-btn active" data-tipo="minorista">
+                        <i class="fas fa-user"></i>
+                        Minorista
+                    </button>
+                    <button class="selector-btn" data-tipo="mayorista">
+                        <i class="fas fa-store"></i>
+                        Mayorista
+                    </button>
+                    <button class="selector-btn" data-tipo="proveedor">
+                        <i class="fas fa-truck"></i>
+                        Proveedor
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Longanizas -->
+        <section class="producto-categoria">
+            <div class="container">
+                <div class="categoria-header">
+                    <h2><i class="fas fa-award"></i> Longanizas Premium</h2>
+                    <p>Elaboradas con carne seleccionada y especias tradicionales de la más alta calidad</p>
+                </div>
+
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Longaniza Tradicional" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Longaniza Tradicional</h4>
+                            <p class="producto-descripcion">Receta familiar con especias tradicionales</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Artesanal</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$9.000</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$7.600</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$6.400</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Longaniza Picante" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Longaniza Picante</h4>
+                            <p class="producto-descripcion">Con ají cacho de cabra y merkén</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Picante</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$9.600</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$8.200</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$7.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Longaniza Gourmet" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Longaniza Gourmet</h4>
+                            <p class="producto-descripcion">Con vino tinto y hierbas finas</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Premium</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$10.400</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$9.000</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$7.800</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Butifarras -->
+        <section class="producto-categoria">
+            <div class="container">
+                <div class="categoria-header">
+                    <h2><i class="fas fa-star"></i> Butifarras Gourmet</h2>
+                    <p>Recetas tradicionales con toques gourmet únicos y ingredientes selectos</p>
+                </div>
+
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Butifarra Catalana" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Butifarra Catalana</h4>
+                            <p class="producto-descripcion">Receta tradicional catalana</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Tradicional</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$9.500</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$8.000</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$6.750</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Butifarra Tradicional" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Butifarra Tradicional</h4>
+                            <p class="producto-descripcion">Receta tradicional </p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Tradicional</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$9.500</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$8.000</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$6.750</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Arrollados de Huaso -->
+        <section class="producto-categoria">
+            <div class="container">
+                <div class="categoria-header">
+                    <h2><i class="fas fa-leaf"></i> Arrollados de Huaso</h2>
+                    <p>Tradicional arrollado con el sabor auténtico de siempre, elaborado artesanalmente</p>
+                </div>
+
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Arrollado Tradicional" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Arrollado Tradicional</h4>
+                            <p class="producto-descripcion">Receta familiar de generaciones</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Tradicional</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$8.500</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$7.200</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$6.200</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Arrollado con Aceitunas" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Arrollado con Aceitunas</h4>
+                            <p class="producto-descripcion">Con aceitunas verdes de Azapa</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Gourmet</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$9.200</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$7.900</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$6.900</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Arrollado Premium" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Arrollado Premium</h4>
+                            <p class="producto-descripcion">Con pimentón rojo y hierbas</p>
+                            <div class="producto-specs">
+                                <span class="spec">1.2kg</span>
+                                <span class="spec">Premium</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$10.500</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$9.000</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$7.800</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prietas -->
+        <section class="producto-categoria">
+            <div class="container">
+                <div class="categoria-header">
+                    <h2><i class="fas fa-fire"></i> Prietas Artesanales</h2>
+                    <p>Elaboradas con técnicas ancestrales y ingredientes frescos de la región</p>
+                </div>
+
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Prieta Tradicional" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Prieta Tradicional</h4>
+                            <p class="producto-descripcion">Receta ancestral chilena</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Ancestral</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$10.650</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$9.000</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$7.650</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Prieta con Arroz" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Prieta con nueces</h4>
+                            <p class="producto-descripcion">Con nueces especias</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Tradicional</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$10.000</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$8.570</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$7.430</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="longanizacut.png" alt="Prieta Gourmet" class="producto-img">
+                        <div class="producto-info">
+                            <h4>Prieta Gourmet</h4>
+                            <p class="producto-descripcion">Con Queso</p>
+                            <div class="producto-specs">
+                                <span class="spec">1kg</span>
+                                <span class="spec">Gourmet</span>
+                            </div>
+                            <div class="precios">
+                                <div class="precio minorista">
+                                    <span class="precio-label">Minorista:</span>
+                                    <span class="precio-valor">$14.000</span>
+                                </div>
+                                <div class="precio mayorista">
+                                    <span class="precio-label">Mayorista:</span>
+                                    <span class="precio-valor">$12.000</span>
+                                </div>
+                                <div class="precio proveedor">
+                                    <span class="precio-label">Proveedor:</span>
+                                    <span class="precio-valor">$10.330</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Condiciones Comerciales -->
+        <section class="condiciones" id="condiciones">
+            <div class="container">
+                <h2>Condiciones Comerciales</h2>
+                <div class="condiciones-grid">
+                    <div class="condicion-card minorista-info">
+                        <h3><i class="fas fa-user"></i> Minorista</h3>
+                        <ul>
+                            <li>Compra mínima: Sin mínimo</li>
+                            <li>Forma de pago: Efectivo, tarjeta</li>
+                            <li>Entrega: Retiro en local</li>
+                            <li>Descuentos: 5% por compras sobre $50.000</li>
+                            <li>Garantía: Productos frescos diarios</li>
+                        </ul>
+                    </div>
+
+                    <div class="condicion-card mayorista-info">
+                        <h3><i class="fas fa-store"></i> Mayorista</h3>
+                        <ul>
+                            <li>Compra mínima: $100.000</li>
+                            <li>Forma de pago: 30 días fecha factura</li>
+                            <li>Entrega: Incluida en Quinta Región</li>
+                            <li>Descuentos: Escala según volumen</li>
+                            <li>Frecuencia: Entregas programadas</li>
+                        </ul>
+                    </div>
+
+                    <div class="condicion-card proveedor-info">
+                        <h3><i class="fas fa-truck"></i> Proveedor</h3>
+                        <ul>
+                            <li>Compra mínima: $500.000</li>
+                            <li>Forma de pago: 45 días fecha factura</li>
+                            <li>Entrega: Nacional sin costo adicional</li>
+                            <li>Descuentos: Hasta 30% según volumen</li>
+                            <li>Soporte: Asesoría comercial incluida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer del Catálogo -->
+    <footer class="catalogo-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto Comercial</h4>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> +56 9 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> ventas@MayerCecinas.cl</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Quinta Región, Chile</p>
+                        <p><i class="fab fa-whatsapp"></i> WhatsApp: +56 9 1234 5678</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios de Atención</h4>
+                    <div class="horarios">
+                        <p>Lunes a Viernes: 8:00 - 18:00</p>
+                        <p>Sábados: 8:00 - 14:00</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Certificaciones</h4>
+                    <div class="certificaciones">
+                        <p>✓ HACCP Certificado</p>
+                        <p>✓ Registro Sanitario</p>
+                        <p>✓ Trazabilidad Completa</p>
+                        <p>✓ Calidad Premium</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cecinas Artesanales - Quinta Región, Chile</p>
+                <p>Catálogo válido hasta 31/12/2025 - Precios sujetos a cambio sin previo aviso</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botones de Acción -->
+    <div class="action-buttons">
+        <button class="btn-action" onclick="window.print()">
+            <i class="fas fa-print"></i>
+            Imprimir Catálogo
+        </button>
+        <button class="btn-action" onclick="contactarWhatsApp('catalogo')">
+            <i class="fab fa-whatsapp"></i>
+            Consultar por WhatsApp
+        </button>
+        <button class="btn-action" onclick="descargarPDF()">
+            <i class="fas fa-download"></i>
+            Descargar PDF
+        </button>
+    </div>
+
+    <script src="catalogo-script.js"></script>
+</body>
+</html>
