@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cecinas Artesanales - Quinta Región, Chile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">C</div>
+                    <span class="logo-text">Cecinas Artesanales</span>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#productos" class="nav-link">Productos</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+                <button class="btn btn-primary" onclick="contactarWhatsApp()">Cotizar Ahora</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">Tradición Artesanal</div>
+                    <h1 class="hero-title">
+                        Cecinas Premium
+                        <span class="text-red">Artesanales</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Elaboramos las mejores longanizas, butifarras, arrollados de huaso y prietas con recetas tradicionales y
+                        ingredientes premium en la Quinta Región de Chile.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="scrollToSection('productos')">
+                            Ver Productos
+                        </button>
+                        <button class="btn btn-outline btn-lg" onclick="contactarWhatsApp('mayorista')">
+                            Precios Mayorista
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section id="productos" class="productos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestros Productos Estrella</h2>
+                    <p class="section-subtitle">
+                        Cada producto es elaborado artesanalmente con ingredientes seleccionados y técnicas tradicionales
+                    </p>
+                </div>
+
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Longanizas artesanales" class="producto-img">
+                        <div class="producto-content">
+                            <h3 class="producto-title">Longanizas Premium</h3>
+                            <p class="producto-description">Elaboradas con carne seleccionada y especias tradicionales</p>
+                            <span class="producto-badge">Artesanal</span>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Butifarras gourmet" class="producto-img">
+                        <div class="producto-content">
+                            <h3 class="producto-title">Butifarras Gourmet</h3>
+                            <p class="producto-description">Receta tradicional con toques gourmet únicos</p>
+                            <span class="producto-badge">Premium</span>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Arrollado de huaso" class="producto-img">
+                        <div class="producto-content">
+                            <h3 class="producto-title">Arrollado de Huaso</h3>
+                            <p class="producto-description">Tradicional arrollado con el sabor auténtico de siempre</p>
+                            <span class="producto-badge">Tradicional</span>
+                        </div>
+                    </div>
+
+                    <div class="producto-card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Prietas artesanales" class="producto-img">
+                        <div class="producto-content">
+                            <h3 class="producto-title">Prietas Artesanales</h3>
+                            <p class="producto-description">Elaboradas con técnicas ancestrales y ingredientes frescos</p>
+                            <span class="producto-badge">Ancestral</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="nosotros">
+            <div class="container">
+                <div class="nosotros-content">
+                    <div class="nosotros-text">
+                        <div class="badge badge-dark">Nuestra Historia</div>
+                        <h2 class="section-title">Tradición y Calidad en Cada Producto</h2>
+                        <p class="nosotros-description">
+                            Somos una empresa familiar de la Quinta Región de Chile, dedicada a la elaboración artesanal de cecinas premium. 
+                            Combinamos técnicas tradicionales con los más altos estándares de calidad para ofrecer productos únicos y auténticos.
+                        </p>
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-award feature-icon"></i>
+                                <div>
+                                    <h4 class="feature-title">Premium</h4>
+                                    <p class="feature-description">Ingredientes seleccionados</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-star feature-icon"></i>
+                                <div>
+                                    <h4 class="feature-title">Artesanal</h4>
+                                    <p class="feature-description">Elaboración tradicional</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="contactarWhatsApp('conocer-mas')">Conoce Más</button>
+                    </div>
+                    <div class="nosotros-image">
+                        <img src="/placeholder.svg?height=500&width=600" alt="Proceso artesanal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="servicios">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <p class="section-subtitle">
+                        Ofrecemos soluciones para todos los tipos de clientes con precios competitivos
+                    </p>
+                </div>
+
+                <div class="servicios-grid">
+                    <div class="servicio-card">
+                        <i class="fas fa-users servicio-icon"></i>
+                        <h3 class="servicio-title">Venta Minorista</h3>
+                        <p class="servicio-description">
+                            Productos frescos para consumidores finales con la mejor calidad y sabor
+                        </p>
+                        <ul class="servicio-features">
+                            <li>• Productos frescos diarios</li>
+                            <li>• Atención personalizada</li>
+                            <li>• Variedad completa</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="contactarWhatsApp('minorista')">Ver Precios</button>
+                    </div>
+
+                    <div class="servicio-card servicio-destacado">
+                        <i class="fas fa-truck servicio-icon"></i>
+                        <h3 class="servicio-title">Venta Mayorista</h3>
+                        <p class="servicio-description">Suministro constante para restaurantes, hoteles y distribuidores</p>
+                        <ul class="servicio-features">
+                            <li>• Precios preferenciales</li>
+                            <li>• Entrega programada</li>
+                            <li>• Volúmenes grandes</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="contactarWhatsApp('mayorista')">Cotizar Mayorista</button>
+                    </div>
+
+                    <div class="servicio-card">
+                        <i class="fas fa-award servicio-icon"></i>
+                        <h3 class="servicio-title">Precios Proveedor</h3>
+                        <p class="servicio-description">Condiciones especiales para distribuidores y socios comerciales</p>
+                        <ul class="servicio-features">
+                            <li>• Mejores precios del mercado</li>
+                            <li>• Términos de pago flexibles</li>
+                            <li>• Soporte comercial</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="contactarWhatsApp('proveedor')">Ser Proveedor</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">¿Listo para probar la mejor calidad?</h2>
+                    <p class="cta-subtitle">
+                        Contacta con nosotros y descubre por qué somos la elección preferida de chefs y conocedores en la Quinta Región
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="contactarWhatsApp('cotizacion')">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Cotización
+                        </button>
+                        <button class="btn btn-outline btn-lg" onclick="contactarWhatsApp('catalogo')">
+                            Ver Catálogo Completo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">C</div>
+                        <span class="logo-text">Cecinas Artesanales</span>
+                    </div>
+                    <p class="footer-description">Tradición, calidad y sabor en cada producto artesanal de la Quinta Región.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Productos</h4>
+                    <ul class="footer-list">
+                        <li>Longanizas Premium</li>
+                        <li>Butifarras Gourmet</li>
+                        <li>Arrollado de Huaso</li>
+                        <li>Prietas Artesanales</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-list">
+                        <li>Venta Minorista</li>
+                        <li>Venta Mayorista</li>
+                        <li>Precios Proveedor</li>
+                        <li>Distribución</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+56 9 1234 5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ventas@cecinasartesanales.cl</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Quinta Región, Chile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cecinas Artesanales. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float" onclick="contactarWhatsApp('flotante')">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
